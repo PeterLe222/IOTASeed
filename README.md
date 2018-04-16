@@ -1,4 +1,4 @@
-# IOTASeed
+# IOTA Seed Generation 
 
 ## Generating a random 81 character seed using only A-Z and the number 9
 
