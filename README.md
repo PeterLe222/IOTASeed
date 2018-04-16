@@ -4,7 +4,7 @@
 
 ## There are options to generate IOTA seed: 
 
-### Matlab
+###### Matlab
 ```
 % IOTA seed includes upperletter from A-Z and number 9
 inputSeed = ['A':'Z' '9'];
@@ -20,8 +20,11 @@ SeedGeneration = randi(arraySeed, [1 81]);
 generateSeed = inputSeed(SeedGeneration)
 ```
 
-### Linux 
+###### Linux 
+```
 cat /dev/urandom |tr -dc A-Z9|head -c${1:-81} 
-
-### Mac 
+```
+###### Mac
+```
 cat /dev/urandom |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1 
+```
